@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administrador</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../static/css/perfil.css">
+</head>
+<body>
+    <div class="admin-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <!-- Perfil -->
+            <div class="profile-section">
+                <div class="profile-image">
+                    <img src="../static/img/administrador.png" alt="Admin Profile">
+                </div>
+                <h3>Administrador</h3>
+                <p>admin@ejemplo.com</p>
+            </div>
+
+            <!-- Menú de navegación -->
+            <nav class="nav-menu">
+                <a href="#" class="nav-item active">
+                    <i class="fas fa-user"></i>
+                    <span>PERFIL</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-box"></i>
+                    <span>PRODUCTOS</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-truck"></i>
+                    <span>CONDUCTORES</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-chart-line"></i>
+                    <span>VENTAS</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-file-alt"></i>
+                    <span>GENERAR INFORME</span>
+                </a>
+            </nav>
+
+            <!-- Botón de cerrar sesión -->
+            <div class="logout-section">
+                <a href="#" class="logout-btn">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>CERRAR SESIÓN</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Contenido principal -->
+        <div class="main-content">
+            <header class="content-header">
+                <h1>Panel de Administración</h1>
+                <div class="header-controls">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Buscar...">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="notifications">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-badge">3</span>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </div>
+</body>
+</html>

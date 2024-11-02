@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Configuración de metadatos básicos para codificación y vista responsiva -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título de la página -->
+    <title>LEA Home</title>
+
+    <!-- Enlace al archivo CSS principal -->
+    <link rel="stylesheet" href="../static/css/producto.css">
+
+    <!-- Enlace a Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Enlace al archivo JavaScript para el slider -->
+    <script src="../static/js/slider.js"></script>
+</head>
+
+<body>
+
+    <!-- Header principal de la página -->
+    <header class="header">
+
+        <!-- Barra superior de anuncio o información adicional -->
+        <div class="top-bar">
+            <p>Visita nuestra FÁBRICA, conoce nuestros acabados e instalaciones. ¡Vive la experiencia Muebles Lea Home!
+            </p>
+        </div>
+
+        <!-- Barra de navegación -->
+        <div class="nav-bar">
+
+            <!-- Contenedor del logo -->
+            <div class="logo-container">
+                <img src="../static/img/logo.png" alt="LEA Home Logo" class="logo">
+            </div>
+
+            <!-- Menú de navegación principal -->
+            <nav>
+                <ul>
+                    <li><a href="newinicio.html">INICIO</a></li>
+                    <li><a href="#">CONTACTO</a></li>
+                    <li><a href="#">SALAS</a></li>
+                    <li><a href="#">COMEDORES</a></li>
+                    <li><a href="#">DECORACIÓN</a></li>
+                </ul>
+            </nav>
+
+            <!-- Barra de búsqueda y controles de usuario -->
+            <div class="search-bar">
+                <input type="text" placeholder="¿Qué producto estás buscando?">
+                <button>Buscar</button>
+
+                <!-- Controles de usuario como perfil y carrito de compras -->
+                <div class="user-controls">
+                    <a href="login.html"><i class="fas fa-user"></i></a> <!-- Enlace a la página de inicio de sesión -->
+                    <a href="carrito.html"><i class="fas fa-shopping-cart"></i></a>
+                    <!-- Enlace al carrito de compras -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Después del header y antes del footer -->
+    <main class="product-container">
+        <!-- Imagen del producto -->
+        <div class="product-image">
+            <img src="../static/img/producto2.jpg" alt="Sofá Vintage Azul">
+        </div>
+
+        <!-- Información del producto -->
+        <div class="product-info">
+            <div class="price-section">
+                <span class="discount">(20% descuento)</span>
+                <div class="price">
+                    <span class="current-price">S/2479.90</span>
+                    <span class="original-price">S/3599.90</span>
+                </div>
+            </div>
+
+            <div class="sku">SKU:423429</div>
+
+            <!-- Cantidad y botón de compra -->
+            <div class="purchase-section">
+                <div class="quantity">
+                    <span>Cantidad</span>
+                    <div class="quantity-controls">
+                        <button class="qty-btn">-</button>
+                        <input type="number" value="1" min="1">
+                        <button class="qty-btn">+</button>
+                    </div>
+                </div>
+                <button class="add-to-cart">AGREGAR AL CARRITO</button>
+            </div>
+
+            <!-- Descripción y características -->
+            <div class="product-details">
+                <h3>DESCRIPCIÓN DE PRODUCTO</h3>
+                <p>Lea Home te presenta el sofá Vintage con zócalo de madera, una pieza de mobiliario contemporáneo que
+                    combina elegancia y comodidad en un diseño único. Este sofá ofrece un espacio amplio y acogedor para
+                    relajarte con estilo en tu sala de estar. Su zócalo de madera agrega un toque clásico y durabilidad,
+                    mientras que sus suaves cojines te brindan el máximo confort. Descubre cómo el sofá Vintage puede
+                    transformar tu sala de estar en un espacio sofisticado y acogedor para ti y tus seres queridos.</p>
+
+                <h3>Características Técnicas</h3>
+                <ul>
+                    <li>Dimensiones (cm): Largo: 2.70 Fondo: 122 , Alto: 0.82</li>
+                    <li>Estructura: Madera Maciza</li>
+                    <li>Relleno del Asiento y Respaldo: Espuma de alta densidad 25kg</li>
+                    <li>Revestimiento: Tela Ankara</li>
+                    <li>Color: Variado</li>
+                    <li>Patas: Madera Tornillo</li>
+                </ul>
+            </div>
+
+            <!-- Productos relacionados -->
+            <div class="related-products">
+                <h3>También te puede interesar:</h3>
+                <div class="product-carousel">
+                    <button class="carousel-btn prev">‹</button>
+                    <!-- Dentro de carousel-items -->
+                    <div class="carousel-items">
+                        <!-- Combo 1 -->
+                        <div class="carousel-item">
+                            <img src="../static/img/galeria_09.jpg" alt="Combo 1">
+                            <div class="item-price">
+                                <span class="current-price">S/479.90</span>
+                                <span class="original-price">S/599.90</span>
+                            </div>
+                            <span class="item-name">Combo 1</span>
+                        </div>
+
+                        <!-- Combo 2 -->
+                        <div class="carousel-item">
+                            <img src="../static/img/galeria_08.jpg" alt="Combo 2">
+                            <div class="item-price">
+                                <span class="current-price">S/479.90</span>
+                                <span class="original-price">S/599.90</span>
+                            </div>
+                            <span class="item-name">Combo 2</span>
+                        </div>
+
+                        <!-- Combo 3 -->
+                        <div class="carousel-item">
+                            <img src="../static/img/galeria_07.jpg" alt="Combo 3">
+                            <div class="item-price">
+                                <span class="current-price">S/479.90</span>
+                                <span class="original-price">S/599.90</span>
+                            </div>
+                            <span class="item-name">Combo 3</span>
+                        </div>
+
+                        <!-- Combo 4 -->
+                        <div class="carousel-item">
+                            <img src="../static/img/galeria_06.jpg" alt="Combo 4">
+                            <div class="item-price">
+                                <span class="current-price">S/479.90</span>
+                                <span class="original-price">S/599.90</span>
+                            </div>
+                            <span class="item-name">Combo 4</span>
+                        </div>
+                    </div>
+                    <!-- Repite para los otros combos -->
+                </div>
+                <button class="carousel-btn next">›</button>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <!-- Pie de página (footer) -->
+    <footer>
+        <!-- Sección sobre nosotros en el pie de página -->
+        <div class="footer-section">
+            <h3>Sobre nosotros</h3>
+            <p>Lea Home: Tu Destino en Lima, Perú para Muebles de Diseño y Calidad para el Hogar. Nos especializamos en
+                la creación de mobiliario a medida, donde cada pieza cuenta una historia única en tu espacio.</p>
+        </div>
+
+        <!-- Menú de enlaces en el pie de página -->
+        <div class="footer-section">
+            <h3>Menú</h3>
+            <ul>
+                <li><a href="#">Términos y condiciones</a></li>
+                <li><a href="#">Política de cookies</a></li>
+                <li><a href="#">Política de Privacidad</a></li>
+            </ul>
+        </div>
+
+        <!-- Sección de contacto en el pie de página -->
+        <div class="footer-section">
+            <h3>Contacto</h3>
+            <ul>
+                <li><a href="#">Escríbenos</a></li>
+                <li><a href="#">Trabaja con Nosotros</a></li>
+                <li><a href="#">Formulario de Devolución de Compra en Línea</a></li>
+                <li><a href="#">Libro de Reclamaciones</a></li>
+            </ul>
+        </div>
+
+        <!-- Sección de redes sociales en el pie de página -->
+        <div class="footer-section">
+            <h3>Síguenos</h3>
+            <div class="social-links">
+                <a href="#"><img src="img/fb.webp" alt="Facebook"></a>
+                <a href="#"><img src="img/instagram.webp" alt="Instagram"></a>
+                <a href="#"><img src="img/x.webp" alt="Twitter"></a>
+            </div>
+        </div>
+
+        <!-- Nota de derechos reservados -->
+        <p>© 2023 LEA Home. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

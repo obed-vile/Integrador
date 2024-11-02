@@ -1,0 +1,272 @@
+/* Importa la fuente Montserrat desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+/* Reinicia el margen y padding de todos los elementos y define la fuente base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Estilos básicos del body para centrar el contenido en la pantalla y definir un fondo en degradado */
+body {
+    background-color: #c9d6ff;
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Estilos generales del contenedor principal */
+.container {
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: hidden;
+    width: 900px;
+    max-width: 100%;
+    min-height: 600px;
+}
+
+/* Estilos para los párrafos dentro del contenedor */
+.container p {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin: 20px 0;
+}
+
+/* Estilo para spans dentro del contenedor, tamaño de fuente menor */
+.container span {
+    font-size: 12px;
+}
+
+/* Estilo para los enlaces dentro del contenedor */
+.container a {
+    color: #333;
+    font-size: 13px;
+    text-decoration: none;
+    margin: 15px 0 10px;
+}
+
+/* Estilos generales para los botones dentro del contenedor */
+.container button {
+    background-color: #f90707bd; /* Color de fondo del botón */
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* Estilos para los botones con clase 'hidden', botones invisibles en el toggle */
+.container button.hidden {
+    background-color: transparent;
+    border-color: #fff;
+}
+
+/* Estilo de los formularios dentro del contenedor */
+.container form {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    height: 100%;
+}
+
+/* Estilo de los campos de entrada de texto dentro de los formularios */
+.container input {
+    background-color: #eee;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+}
+
+/* Contenedor de los formularios individuales (registro e inicio de sesión) */
+.form-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out; /* Transición para las animaciones */
+}
+
+/* Estilos para el formulario de inicio de sesión */
+.sign-in {
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+/* Transforma el formulario de inicio de sesión al activar la clase 'active' en el contenedor */
+.container.active .sign-in {
+    transform: translateX(100%);
+}
+
+/* Estilos para el formulario de registro */
+.sign-up {
+    left: 0;
+    width: 50%;
+    opacity: 0; /* Oculto inicialmente */
+    z-index: 1;
+}
+
+/* Aplica transformaciones al formulario de registro cuando el contenedor tiene la clase 'active' */
+.container.active .sign-up {
+    transform: translateX(100%);
+    opacity: 1; /* Muestra el formulario de registro */
+    z-index: 5;
+    animation: move 0.6s; /* Aplica animación */
+}
+
+/* Definición de la animación 'move' para hacer la transición de opacidad */
+@keyframes move {
+    0%, 49.99% {
+        opacity: 0;
+        z-index: 1;
+    }
+    50%, 100% {
+        opacity: 1;
+        z-index: 5;
+    }
+}
+
+/* Estilo para el contenedor de iconos sociales */
+.social-icons {
+    margin: 20px 0;
+}
+
+/* Estilos individuales para cada icono social */
+.social-icons a {
+    border: 1px solid #ccc;
+    border-radius: 20%; /* Forma circular */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3px;
+    width: 40px;
+    height: 40px;
+}
+
+/* Contenedor de los paneles de alternancia (toggle) */
+.toggle-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.6s ease-in-out;
+    border-radius: 150px 0 0 100px;
+    z-index: 1000;
+}
+
+/* Aplica transformaciones al contenedor de alternancia cuando está activo */
+.container.active .toggle-container {
+    transform: translateX(-100%);
+    border-radius: 0 150px 100px 0;
+}
+
+/* Estilo del fondo del toggle, incluye un degradado */
+.toggle {
+    background-color: #512da8;
+    height: 100%;
+    background: linear-gradient(to right, #F4A236, #F90707); /* Degradado del fondo */
+    color: #fff;
+    position: relative;
+    left: -100%;
+    width: 200%; /* Doble ancho para la transición */
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+
+/* Mueve el toggle al 50% cuando el contenedor está activo */
+.container.active .toggle {
+    transform: translateX(50%);
+}
+
+/* Estilos para cada panel dentro del toggle */
+.toggle-panel {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    text-align: center;
+    top: 0;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+
+/* Posiciona el panel izquierdo fuera de la vista inicialmente */
+.toggle-left {
+    transform: translateX(-200%);
+}
+
+/* Mueve el panel izquierdo a su posición visible cuando el contenedor está activo */
+.container.active .toggle-left {
+    transform: translateX(0);
+}
+
+/* Panel derecho, permanece en su posición por defecto */
+.toggle-right {
+    right: 0;
+    transform: translateX(0);
+}
+
+/* Mueve el panel derecho fuera de la vista cuando el contenedor está activo */
+.container.active .toggle-right {
+    transform: translateX(200%);
+}
+
+/* Estilos para el botón de regresar */
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.back-btn {
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    background: #fff;
+    border: 2px solid #ff4b2b;
+    border-radius: 20px;
+    color: #ff4b2b;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.back-btn:hover {
+    background: #ff4b2b;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.back-icon {
+    margin-right: 8px;
+    font-size: 18px;
+}

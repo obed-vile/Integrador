@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración de metadatos básicos para codificación y vista responsiva -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título de la página -->
+    <title>LEA Home</title>
+    
+    <!-- Enlace al archivo CSS principal -->
+    <link rel="stylesheet" href="../static/css/in.css">
+    
+    <!-- Enlace a Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Enlace al archivo JavaScript para el slider -->
+    <script src="../static/js/slider.js"></script>
+</head>
+<body>
+    
+    <!-- Header principal de la página -->
+    <header class="header">
+        
+        <!-- Barra superior de anuncio o información adicional -->
+        <div class="top-bar">
+            <p>Visita nuestra FÁBRICA, conoce nuestros acabados e instalaciones. ¡Vive la experiencia Muebles Lea Home!</p>
+        </div>
+        
+        <!-- Barra de navegación -->
+        <div class="nav-bar">
+            
+            <!-- Contenedor del logo -->
+            <div class="logo-container">
+                <img src="../static/img/logo.png" alt="LEA Home Logo" class="logo">
+            </div>
+            
+            <!-- Menú de navegación principal -->
+            <nav>
+                <ul>
+                    <li><a href="newinicio.html">INICIO</a></li>
+                    <li><a href="#">CONTACTO</a></li>
+                    <li><a href="seccion1.html">SALAS</a></li>
+                    <li><a href="#">COMEDORES</a></li>
+                    <li><a href="#">DECORACIÓN</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Barra de búsqueda y controles de usuario -->
+            <div class="search-bar">
+                <input type="text" placeholder="¿Qué producto estás buscando?">
+                <button>Buscar</button>
+                
+                <!-- Controles de usuario como perfil y carrito de compras -->
+                <div class="user-controls">
+                    <a href="login.html"><i class="fas fa-user"></i></a> <!-- Enlace a la página de inicio de sesión -->
+                    <a href="carrito.html"><i class="fas fa-shopping-cart"></i></a> <!-- Enlace al carrito de compras -->
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Sección principal o "Hero" de la página -->
+    <div class="hero">
+        
+        <!-- Contenido de texto de los slides en la sección Hero -->
+        <div class="hero-content">
+            <div class="slide-text active">
+                <h1>SOFA<br>SARA!</h1>
+                <p>Diseño elegante y confortable</p>
+            </div>
+            <div class="slide-text">
+                <h1>SOFA<br>VINTAGE!</h1>
+                <p>Estilo clásico renovado</p>
+            </div>
+            <div class="slide-text">
+                <h1>SOFA<br>MODERNO!</h1>
+                <p>Contemporáneo y funcional</p>
+            </div>
+        </div>
+        
+        <!-- Contenedor del slider de imágenes en la sección Hero -->
+        <div class="hero-slider">
+            <div class="slider-container">
+                <div class="slide active">
+                    <img src="../static/img/producto1.jpg" alt="Sofa Sara">
+                </div>
+                <div class="slide">
+                    <img src="../static/img/producto2.jpg" alt="Sofa Vintage">
+                </div>
+                <div class="slide">
+                    <img src="../static/img/producto3.jpg" alt="Sofa Moderno">
+                </div>
+            </div>
+            
+            <!-- Controles del slider, incluyendo botones y puntos de navegación -->
+            <div class="slider-controls">
+                <button class="prev-btn">&lt;</button> <!-- Botón de retroceso del slider -->
+                <div class="slider-dots"></div> <!-- Contenedor para los puntos de navegación -->
+                <button class="next-btn">&gt;</button> <!-- Botón de avance del slider -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- Sección de productos favoritos o recomendados -->
+    <section class="favorites">
+        <h2>Preferidos por nuestros clientes</h2>
+        
+        <!-- Galería de productos favoritos -->
+        <div class="product-gallery">
+            <a href="seccion1.html"><img src="../static/img/categoria1.jpg" alt="Producto 1"></a>
+            <img src="../static/img/categoria2.jpg" alt="Producto 2">
+            <img src="../static/img/categoria3.jpg" alt="Producto 3">
+        </div>
+    </section>
+    
+    <!-- Pie de página (footer) -->
+    <footer>
+        <!-- Sección sobre nosotros en el pie de página -->
+        <div class="footer-section">
+            <h3>Sobre nosotros</h3>
+            <p>Lea Home: Tu Destino en Lima, Perú para Muebles de Diseño y Calidad para el Hogar. Nos especializamos en la creación de mobiliario a medida, donde cada pieza cuenta una historia única en tu espacio.</p>
+        </div>
+        
+        <!-- Menú de enlaces en el pie de página -->
+        <div class="footer-section">
+            <h3>Menú</h3>
+            <ul>
+                <li><a href="#">Términos y condiciones</a></li>
+                <li><a href="#">Política de cookies</a></li>
+                <li><a href="#">Política de Privacidad</a></li>
+            </ul>
+        </div>
+        
+        <!-- Sección de contacto en el pie de página -->
+        <div class="footer-section">
+            <h3>Contacto</h3>
+            <ul>
+                <li><a href="#">Escríbenos</a></li>
+                <li><a href="#">Trabaja con Nosotros</a></li>
+                <li><a href="#">Formulario de Devolución de Compra en Línea</a></li>
+                <li><a href="#">Libro de Reclamaciones</a></li>
+            </ul>
+        </div>
+        
+        <!-- Sección de redes sociales en el pie de página -->
+        <div class="footer-section">
+            <h3>Síguenos</h3>
+            <div class="social-links">
+                <a href="#"><img src="img/fb.webp" alt="Facebook"></a>
+                <a href="#"><img src="../static/img/instagram.webp" alt="Instagram"></a>
+                <a href="#"><img src="../static/img/x.webp" alt="Twitter"></a>
+            </div>
+        </div>
+
+        <!-- Nota de derechos reservados -->
+        <p>© 2023 LEA Home. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,163 @@
+.no{
+    display: none;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+.text-center {
+    text-align: center;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+/* Header y nav*/
+
+/* Estilos para la barra de navegación */
+.header {
+    
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-end; /* Alinea los elementos hacia la derecha */
+    align-items: center;
+    padding: 20px 20px;
+    position: relative;
+    height: 100px; /* Ajustamos el alto de la barra de navegación para que el logo encaje bien */
+    border-bottom: 1px solid #ccc; /* Línea divisoria debajo del header */
+}
+.logo-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    height: 100%; /* Asegura que el logo esté alineado verticalmente */
+}
+
+.logo-container img {
+    max-height: 150px; /* Mantener el tamaño del logo, ajustable según necesites */
+    vertical-align: middle;
+}
+
+
+
+/* Caja de búsqueda a la derecha */
+.search-box {
+    display: flex;
+}
+
+.search-box input {
+    width: 200px;
+    font-size: 14px;
+    border: none; /* Elimina todos los bordes */
+    border-bottom: 2px solid #000000c5; /* Solo subrayado */
+    background: transparent;
+    outline: none;
+    padding: 5px;
+    transition: border-color 0.3s ease; /* Transición para cambio de color */
+}
+
+.search-box input:focus {
+    border-bottom: 2px solid #FFA500; /* Cambia el color del subrayado al estar en foco */
+}
+
+.search-box button {
+    padding: 8px 12px;
+    background-color: #575757;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 5px;
+}
+
+.search-box button:hover {
+    background-color: #888;
+}
+
+
+.nav-container {
+    border-top: .1rem solid #e1e1e1;
+}
+
+.nav-principal {
+    display: flex;
+    padding: 2rem 0;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/*fotter*/
+/* Estilos para el footer */
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+/* Contenedor de cada sección */
+.footer-section {
+    max-width: 250px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-section p,
+.footer-section a {
+    font-size: 14px;
+    color: #ccc;
+    line-height: 1.6;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: #fff;
+}
+
+/* Sección de redes sociales */
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Estilo general de todo el footer */
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+/* Alineación y estilo del texto */
+.footer-section p {
+    margin: 0;
+}
+
+
