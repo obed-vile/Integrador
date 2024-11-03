@@ -42,14 +42,23 @@ src
 │   │   └── com.tuapp.ecommerce
 
 │   │       ├── controller       # Controladores de rutas y lógica de interfaz
+
 │   │       ├── model            # Entidades y modelos de datos
+
 │   │       ├── repository       # Repositorios para acceder a la base de datos
+
 │   │       ├── service          # Servicios con lógica de negocio
+
 │   │       └── EcommerceApplication.java   # Clase principal
+
 │   └── resources
+
 │       ├── static               # Archivos estáticos como CSS y JS
+
 │       ├── templates            # Plantillas HTML Thymeleaf
+
 │       └── application.properties # Configuraciones de la aplicación
+
 
 
 ## 🌐 Endpoints y Rutas
