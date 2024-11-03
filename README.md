@@ -32,6 +32,13 @@ mvn clean install
 mvn spring-boot:run
 ~~~
 
+## Tecnologías utilizadas
+
+- Spring Boot
+- Spring Data JPA
+- Thymeleaf para el renderizado del frontend
+- MySQL para la base de datos
+- Maven para la gestión de dependencias
 
 ## 📂 Estructura del Proyecto
 
