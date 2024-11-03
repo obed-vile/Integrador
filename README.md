@@ -33,10 +33,14 @@ mvn spring-boot:run
 ~~~
 
 ##📂 Estructura del Proyecto
+
 src
 ├── main
+
 │   ├── java
+
 │   │   └── com.tuapp.ecommerce
+
 │   │       ├── controller       # Controladores de rutas y lógica de interfaz
 │   │       ├── model            # Entidades y modelos de datos
 │   │       ├── repository       # Repositorios para acceder a la base de datos
