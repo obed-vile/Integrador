@@ -1,31 +1,38 @@
 package service;
 
-import java.util.Optional;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 import model.Usuario;
 import repository.UsuarioRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import java.util.Optional;
 
 @Service
-public class UsuarioServiceImp implements UsuarioService{
-	
-	@Autowired
-	private UsuarioRepository usuarioRepository;
+public class UsuarioServiceImp implements UsuarioService {
 
-	@Override
-	public Optional<Usuario> findById(Integer id) {
-		return usuarioRepository.findById(id);
-	}
+    private final UsuarioRepository usuarioRepository;
 
-	@Override
-	public Usuario save(Usuario usuario) {
-		return usuarioRepository.save(usuario);
-	}
+    @Autowired
+    public UsuarioServiceImp(UsuarioRepository usuarioRepository) {
+        this.usuarioRepository = usuarioRepository;
+    }
 
-	@Override
-	public Optional<Usuario> findByEmail(String email) {
-		return usuarioRepository.findByEmail(email);
-	}
-	
+    @Override
+    public Usuario saveUsuario(Usuario usuario) {
+        return usuarioRepository.save(usuario);
+    }
 
+    @Override
+    public Optional<Usuario> findUsuarioById(Integer id) {
+        return usuarioRepository.findById(id);
+    }
+
+    @Override
+    public Optional<Usuario> findUsuarioByEmail(String correo) {
+        return usuarioRepository.findByCorreo(correo);
+    }
+
+    @Override
+    public void deleteUsuarioById(Integer id) {
+        usuarioRepository.deleteById(id);
+    }
 }

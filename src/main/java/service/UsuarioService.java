@@ -1,12 +1,12 @@
 package service;
 
+import model.Usuario;
 import java.util.Optional;
 
-import model.Usuario;
-
 public interface UsuarioService {
-	Optional<Usuario> findById(Integer id);
-	Usuario save(Usuario usuario);
-	Optional<Usuario> findByEmail(String email);
-
+    
+    Usuario saveUsuario(Usuario usuario);
+    Optional<Usuario> findUsuarioById(Integer id);
+    Optional<Usuario> findUsuarioByEmail(String correo);
+    void deleteUsuarioById(Integer id);
 }

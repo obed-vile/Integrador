@@ -39,10 +39,10 @@ public class Usuario {
 	
 	@Column(name="contraseña")
 	private String contraseña;
-	
-	@Column(name="rol")
-	private String rol = "cliente";
 
+	@Column(name="rol")
+	private String rol;
+	
 	@OneToMany(mappedBy = "usuario")
 	private List<Producto> productos;
 	
@@ -61,6 +61,7 @@ public class Usuario {
 		this.dni = dni;
 		this.correo = correo;
 		this.contraseña = contraseña;
+		this.rol=rol;
 	}
 
 
@@ -128,22 +129,20 @@ public class Usuario {
 		this.contraseña = contraseña;
 	}
 
-	public void setRol(String rol) {
-		if (rol != null && (rol.equals("admin") || rol.equals("cliente"))) {
-			this.rol = rol;
-		} else {
-			throw new IllegalArgumentException("El rol debe ser 'admin' o 'cliente'");
-		}
+	public String getRol() {
+		return correo;
 	}
 
-	public String getRol() {
-		return rol;
+	public void setRol(String rol) {
+		this.rol = rol;
 	}
 
 	@Override
 	public String toString() {
 		return "Usuario [id=" + id + ", nombre=" + nombre + ", apellido=" + apellido + ", direccion=" + direccion
 				+ ", telefono=" + telefono + ", dni=" + dni + ", correo=" + correo + ", contraseña=" + contraseña
-				+ ", rol=" + rol + "]";
+				+ ", rol=" + rol + ", productos=" + productos + ", ordenes=" + ordenes + "]";
 	}
+	
+
 }
